@@ -1,0 +1,27 @@
+
+{
+  "name": "YouTube Comments Sentiment Analyzer",
+  "description": "Analyzes YouTube comments sentiment",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkVmnlDEwiPeiXE27bDiF1ZPAbm9aILsL816bktP/CMBudLbB8wdyeOxD5N1PzPxRpQrahLYfK8iYWp+lL/Pvgs/Zr4JDc8vwGxPJt0ckgyNHzINwvA0nkcJ9UXqwlHgekPvJE3J0sJyAT9Aw1oA9wfc6E73MQRdtZdLSpyrS2AkNfxBDDWE8ZTxOeCoromQ5aJ91oZ6HQTQuVb2qwG01DS/gD6f+miQtYrjqW0GzCDc0t2yH+XneEq5AcsXDQWSz/dpKemWpTtqzL63wSgrJvrjdQ4h0kPvp2/rMVr+Dr5niPNIAN0mQdXRP3t4W0Dt/95W+sybKNl43QEXAaPa8bwIDAQAB",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://www.youtube.com/watch*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/icon_16.png",
+      "48": "/images/icon_48.png",
+      "128": "/images/icon_128.png"
+    }
+  },
+  "icons": {
+      "16": "/images/icon_16.png",
+      "48": "/images/icon_48.png",
+      "128": "/images/icon_128.png"
+  }
+}

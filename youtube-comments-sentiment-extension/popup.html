@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <!-- <p>Video ID: <input type="text" id="videoId"></p> -->
+    <p>
+      Video ID:
+      <span id="video-id"></span>
+    </p>
+    <div id="analyzing">Analyzing...</div>
+
+    <!-- Sentiment section -->
+    <div id="sentiment">
+      <div id="separater"></div>
+      <span class="title">Comments Sentiment:</span>
+
+      <!-- Overall sentiment -->
+      <div class="sentiment-section" id="overall">
+        <span class="title">Overall</span>
+        <div class="scale">
+          <div class="marker" id="overall-scale-marker"></div>
+          <span class="min-sentiment">-100%</span>
+          <span class="max-sentiment">100%</span>
+          <span class="sentiment-tooltip" id="overall-sentiment-score"></span>
+        </div>
+      </div>
+
+      <!-- Topic sentiment -->
+      <div class="sentiment-section" id="favorings">
+        <span class="title">Comment favorings</span>
+
+        <div class="topics">
+
+          <!-- Topic 0 -->
+          <div class="topic" id="topic0">
+            <div class="scale">
+              <div class="marker" id="topic0-scale-marker"></div>
+              <span class="min-sentiment">-100%</span>
+              <span class="max-sentiment">100%</span>
+              <span class="sentiment-tooltip" id="topic0-sentiment-score"></span>
+            </div>
+            <div id="topic0-keywords"></div>
+          </div>
+
+          <div>v.s.</div>
+
+          <!-- Topic 1 -->
+          <div class="topic" id="topic1">
+            <div class="scale">
+              <div class="marker" id="topic1-scale-marker"></div>
+              <span class="min-sentiment">-100%</span>
+              <span class="max-sentiment">100%</span>
+              <span class="sentiment-tooltip" id="topic1-sentiment-score"></span>
+            </div>
+            <div id="topic1-keywords"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="analyze">Analyze Comments</button>
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>
