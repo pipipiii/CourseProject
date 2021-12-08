@@ -60,6 +60,7 @@ def _fetchComments(videoId):
     request = youtube.commentThreads().list(
         part="snippet",
         maxResults=max_results,
+        order="relevance",  # Same as YouTube watch UI. Default is sort by time reversed.
         textFormat="plainText",
         videoId=videoId
     )
