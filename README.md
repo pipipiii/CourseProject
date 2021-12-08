@@ -7,6 +7,9 @@ Please fork this repository and paste the github link of your fork on Microsoft 
 
 YouTube Comments Sentiment Analysis
 
+# Demo video
+https://drive.google.com/file/d/1gLWYHYQfQ2unmZGirGbaUpcyT8ASaSRU/view?usp=sharing
+
 # youtube-comments-sentiment-extension
 
 Chrome Extension to be installed, user interface for the sentiment analysis tool
